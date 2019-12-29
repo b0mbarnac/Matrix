@@ -15,12 +15,7 @@ public class Main {
                 arr[i][j] = in.nextInt();
             }
         }
-        /*int []arr1 = new int[arr.length];
-        for (int i = 0; i <arr1.length ; i++) {
-            System.out.println("Введите чему равны уравнения, соответственнно ");
-            arr1[i]=in.nextInt();
 
-        }*/
         Matrix mat = new Matrix(arr);
         //mat.fill(arr);
         double deter = mat.DetMatrix(arr);
