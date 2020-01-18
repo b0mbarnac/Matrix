@@ -1,20 +1,10 @@
 import java.util.Random;
 
 public class Matrix {
-    private int n;
     private int[][] arr;
-    private int[] arr1;
 
     public Matrix(int[][] arr) {
         this.arr = arr;
-        //this.arr1 = arr1;
-        /*int[][] array = new int[this.arr.length][this.arr[0].length + 1];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[0].length; j++) {
-                array[i][j] = this.arr[i][j];
-            }
-            //array[i][this.arr.length] = this.arr1[i];
-        }*/
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 System.out.print(this.arr[i][j] + "\t");
@@ -67,17 +57,7 @@ public class Matrix {
         } else {
             if (arr.length == 2) {
                 return arr[0][0] * arr[1][1] - (arr[1][0] * arr[0][1]);
-            } /*else {
-                if (arr.length == 3) {
-                    int x, y, z;
-                    x = (arr[0][0] * (arr[1][1] * arr[2][2]
-                            - arr[1][2] * arr[2][1]));
-                    y = (arr[0][1] * (arr[1][0] * arr[2][2]
-                            - arr[1][2] * arr[2][0]));
-                    z = (arr[0][2] * (arr[1][0] * arr[2][1]
-                            - arr[1][1] * arr[2][0]));
-                    return x - y + z;
-                }*/ else {
+            }  else {
                 int[][] matr = new int[arr.length - 1][arr.length - 1];
                 for (int i = 0; i < arr.length; i++) {
                     for (int j = 1; j < arr.length; j++) {
