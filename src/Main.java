@@ -24,9 +24,11 @@ public class Main {
         }
 
         Matrix mat = new Matrix(arr);
+        //mat.printMatrix();
         double deter = mat.DetMatrix(arr);
-        //Cramer cramer = new Cramer();
-
+        Cramer cramer = new Cramer(arr, arr1);
+        cramer.printEquations();
         System.out.println(deter);
+        cramer.solve();
     }
 }
